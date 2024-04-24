@@ -1,7 +1,12 @@
-on: issues
+name: Issue Workflow
+on:
+  issues:
+    types:
+      - opened
 
 jobs:
   issues:
+    name: Issue Workflow
     runs-on: ubuntu-latest
     steps:
       - name: View issue information
